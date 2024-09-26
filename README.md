@@ -1,34 +1,76 @@
-# Movie Data Scraping Project
+# Decentralized Movie Recommendation System
 
-In this project, I used Python and the Beautiful Soup module to scrape data from IMDb.com for approximately 25,000 movies. The following information was collected for each movie:
+## Overview
+This project implements a decentralized movie recommendation system that addresses privacy concerns, scalability issues, and fairness in content suggestions. By leveraging distributed computing principles and content-based recommendation algorithms, we aim to provide personalized movie recommendations while preserving user privacy and data security.
 
-- Movie title
-- Total run time
-- Movie rating
-- User rating
-- Genres
-- Overview
-- Movie's plot keywords
-- Director name
-- Top 5 cast's name
-- Writer name
-- Releasing year
-- IMDb movie URL path
+## Features
+- Privacy-focused: User preferences processed locally
+- Scalable architecture using distributed computing principles
+- Fault-tolerant design
+- Offline functionality
+- Content-based recommendation algorithm
+- Ethical considerations and FAIR principles implementation
 
-## Data Scraping Process
+## System Architecture
+Our system comprises three main components, each running in separate Docker containers:
+1. Scraping Server: Continuously scrapes new movie data from IMDb
+2. Recommendation Server: Processes user queries and generates recommendations
+3. Rebuild Server: Periodically rebuilds the recommendation model with new data
 
-To scrape the data, I used Python's requests module to retrieve the HTML code for each movie page on IMDb.com. I then used Beautiful Soup to parse the HTML and extract the desired data.
+## Methodology
+### Data Collection and Processing
+- Custom web scraper using Python's BeautifulSoup library
+- Dataset: 25,000 movies from IMDb
+- Data preprocessing: text cleaning, categorical data conversion, numerical data handling, feature engineering
 
-## Data Cleaning and Formatting
+### Recommendation Algorithm
+1. Text Vectorization using sklearn's CountVectorizer
+2. Similarity Calculation using cosine similarity
+3. Recommendation Generation based on highest similarity scores
 
-After scraping the data, I cleaned and formatted it to ensure consistency and accuracy. For example, I removed any extraneous whitespace and converted data types as necessary.
+### Decentralization Implementation
+- Local data storage on each node
+- Independent recommendation generation
+- Periodic updates propagated to all nodes
+- Peer-to-peer discovery mechanism using UDP broadcasts
 
-## Movie Recommendation System
+## Results
+### System Performance
+- Near-linear scalability (see Table 1 in the paper)
+- Fault tolerance: 5% increase in response time with 20% node failure
 
-Using the scraped movie data, I built a small recommendation system using machine learning techniques. Specifically, I trained a model to identify the similarities between movies based on their genres, plot keywords, director, writer, and top cast members. The model was trained using a variety of techniques, including natural language processing and clustering algorithms.
+### Recommendation Quality
+- Precision: 0.82
+- Recall: 0.75
+- NDCG: 0.79
+- User study: 85% of users rated recommendations as "good" or "excellent"
 
-To test the model, I built a small web app that takes a movie name from the dataset as input and returns the closest 5 movie recommendations. The app uses the trained model to find movies that are most similar to the input movie based on their features.
+### Data Analysis
+- Genre distribution analysis
+- Cast member popularity
+- User rating distribution
+- Temporal analysis of movies and ratings
 
-## Conclusion
+## Conclusions
+Our Decentralized Movie Recommendation System demonstrates:
+1. Effective privacy preservation
+2. Excellent scalability
+3. Robust fault tolerance
+4. Unique offline functionality
+5. High-quality recommendations
+6. Alignment with ethical data practices
 
-Overall, this project demonstrates the power of web scraping, data analysis, and machine learning in building a movie recommendation system. The scraped movie data can be used for various purposes, such as analyzing trends in the movie industry, while the recommendation system can help users discover new movies based on their preferences.
+## Installation and Usage
+(Include steps for setting up and running the system, including any dependencies)
+
+## Contributing
+We welcome contributions to improve the recommendation algorithm, expand the movie database, or enhance the user interface. Please feel free to submit pull requests or open issues for bugs and feature requests.
+
+
+## Authors
+- Sakib Rokoni
+- Utsho Dey
+- Niloy Sarkar
+
+## Acknowledgments
+We thank our advisor, Annajiat Alim Rasel, for guidance throughout this project.

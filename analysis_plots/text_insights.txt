@@ -1,0 +1,41 @@
+Top 5 movies by User Rating:
+                movie title  User Rating    year
+13            Jurassic Park           90  1993.0
+16               The Batman           90  2022.0
+19           Jurassic World           90  2015.0
+24  Spider-Man: No Way Home           90  2021.0
+34                     Dune           90  1984.0
+
+Most common plot keywords:
+murder              1190
+femalenudity        1152
+psychotronicfilm     964
+revenge              645
+sexscene             635
+
+Average User Rating by Genre:
+Generes
+Biography     57.129132
+Reality-TV    56.000000
+Music         54.930180
+Sport         52.641399
+Comedy        49.814220
+Romance       49.801920
+Fantasy       49.118182
+Mystery       48.971513
+History       46.882265
+Musical       45.451104
+Drama         45.264452
+Animation     45.241379
+War           45.205882
+Horror        44.183153
+Sci-Fi        43.697911
+Family        42.561922
+Adventure     42.530780
+Thriller      41.265384
+Crime         41.029067
+Film-Noir     39.119741
+Action        38.726782
+Western       35.255892
+Game-Show      2.000000
+Adult          1.000000
