@@ -68,9 +68,9 @@ We welcome contributions to improve the recommendation algorithm, expand the mov
 
 
 ## Authors
-- Sakib Rokoni
-- Utsho Dey
-- Niloy Sarkar
+- Sakib Rokoni - 23273004
+- Utsho Dey - 24366019
+- Niloy Sarkar - 21201638
 
 ## Acknowledgments
 We thank our advisor, Annajiat Alim Rasel, for guidance throughout this project.
